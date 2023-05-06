@@ -26,7 +26,7 @@ router.get("/", function (req, res) {
 });
 //Delete a post 
 router.delete("/:postId", function (req, res) {
-  Post.deleteOne({_id: req.params.postId})
+  post.deleteOne({_id: req.params.postId})
   .then(function(post){
     console.log(post)
     res.send("Deleted") ;
