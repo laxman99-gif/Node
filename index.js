@@ -14,7 +14,7 @@ httpServer.use(routesFromAnotherFile);
 
 mongoose
   .connect(
-    //"mongodb+srv://cfc-demo-user:asdfasdf1@cluster0.i35rvgk.mongodb.net/cfc-db",
+    //="mongodb+srv://cfc-demo-user:asdfasdf1@cluster0.i35rvgk.mongodb.net/cfc-db",
     // locally
     "mongodb://127.0.0.1:27017/db-name"
     //https://github.com/arjunQ21/posts-app-frontend.git{},

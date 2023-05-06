@@ -24,6 +24,19 @@ router.get("/", function (req, res) {
       res.send("Error getting posts: " + error);
     });
 });
+//Delete a post 
+router.delete("/:postId", function (req, res) {
+  Post.deleteOne({_id: req.params.postId})
+  .then(function(post){
+    console.log(post)
+    res.send("Deleted") ;
+  })
+  .catch(function(err){
+    res.send("Error deleting: "+ err) ;
+  })
+});
+ 
+
 
 
 module.exports = router;
